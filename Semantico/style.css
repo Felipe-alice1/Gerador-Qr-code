@@ -1,0 +1,28 @@
+.header li{
+
+    
+    display: inline-block;
+}
+
+.header a{
+
+  text-decoration: none;
+}
+
+.footer p{
+
+display: inline-block;
+text-align: center;
+}
+
+.footer{
+
+    text-align: center;
+}
+
+.header{
+
+    text-align: right;
+
+
+}

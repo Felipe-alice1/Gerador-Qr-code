@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="/pasta-form/style.css">
+</head>
+<body>
+    <h2>Formularios de html</h2>
+    <form action="register.php" method="get">
+      <div>
+        <label>Nome:</label>
+        <input type="text" />
+      </div>
+    <!-- name -->
+     <div>
+        <!-- atributo label -->
+     <label for="age">Idade:</label>
+     <input type="text" name="age"/>
+    </div>
+
+<div>
+  <label for="job">Selecione a sua profissão:</label>
+  <select name="job">
+<option value="programador">Programador</option>
+<option value="tester">Tester/Qa</option>
+<option value="devops">DevOps</option>
+  </select>
+  <div>
+<label for="Contract">Voce leu o contrato</label>
+<select name="contract">
+<option value="sim">Sim</option>
+<option value="não" selected>Não</option>
+</select>
+  </div>
+
+  <!-- 8 -->
+   <div>
+  <label for="itens">selecione os itens</label>
+  <select name="itens" multiple >
+<option value="pera">Pera</option>
+<option value="feijão">Feijão</option>
+<option value="arroz">Arroz</option>
+<option value="milho">Milho</option>
+  </select>
+  <div>
+<label for="coment">Escreve opinião:</label>
+<textarea name="coment"></textarea>
+  </div>
+    
+  <!-- 10 fild-->
+
+  <div>
+    <fieldset>
+      <legend> Preenchar as infomraçõpes</legend>
+      <label for="firstname">Nome</label>
+      <input type="text" name="firstname">
+      <label for="lastname">spbrenome</label>
+      <input type="text" name="lastname">
+    </fieldset>
+
+    <!-- datalist -->
+
+    <div>
+      <LABEL for="flavor">sabor</LABEL>
+      <input type="text" list="flavors" name="flavor">
+      
+      <datalist id="flavors">
+        <option value="cereja"></option>
+        <option value="morango"></option>
+        <option value="abacaxi"></option>
+        <option value="chocolate"></option>
+      </datalist>
+    </div>
+<label for=" password">digite a sia senha</label>
+<input type="password" name="password">
+
+<!-- radio -->
+  <div>
+<label for="car_model">escolha o modelo:</label>
+<div class="radio">
+<input type="radio" value="BMW" name=car_modelo>
+<label for="BMW">BMW</label>
+</div>
+<div class="radio">
+<input type="radio" value="Ferrari" name=car_modelo>
+<label for="Ferrari">Ferrari</label>
+</div>
+<div class="radio">
+<input type="radio" value="Volks" name=car_modelo>
+<label for="Volks">volks</label>
+</div>
+</div>
+
+<!-- checkbox -->
+ <div>
+
+<label for="optionals">opcionais</label>
+<div class="radio">
+<input type="checkbox" name="optionals[]" value="big_tires">
+<label for="big_tires">pneus grandes</label>
+</div>
+
+<div class="radio">
+  <input type="checkbox" name="optionals[]" value="turbo_engine">
+  <label for="big_tires">motor turbo</label>
+  </div>
+
+  <div class="radio">
+    <input type="checkbox" name="optionals[]" value="hybrid">
+    <label for="big_tires">hidbrido</label>
+    </div>
+</div>
+
+<!-- data -->
+ <div>
+<label for="birthaday">Data de aniversario:</label>
+<input type="date" name="birthaday">
+</div>
+
+<!-- arquivos -->
+
+<div>
+<label for="imagen">inderir imagem</label>
+</div>
+<!-- input -->
+
+<div>
+
+  <label for="salay"> qual salario atual</label>
+  <input type="number" name="salry">
+</div>
+
+<!-- input-email -->
+<div>
+<label for="email">digite o email</label>
+<input type="email" name="email">
+</div>
+<!-- value -->
+<div>
+  <label for="value">digite algum valor</label>
+  <input type="text" value="meu valor pe esse" name="value">
+
+  <!-- disable -->
+
+  <div>
+    <p>tente mudar o valor</p>
+<input type="text" value="não precia"disabled>
+  </div>
+<!-- placeholder -->
+
+<div>
+ <label for="currentjobe">digite a profissão:</label>
+ <input type="text" nema="currentjobe" placeholder="no que voce trabalha agora"> 
+</div>
+<!-- required -->
+ <div>
+<label for="birthyaer">digite o ano de nascimento</label>
+<input type="text" placeholder="ano que você nasceu" required>
+
+
+ </div>
+
+
+<input type="reset" value="Limpar">
+<input type="submit" value="Enviar"/>
+  </form>
+</body>
+</html>
